@@ -26,4 +26,76 @@ class ViewController: UIViewController {
             priceFfield.text! = "\(price)"
         }
     }
+    @IBAction func tap2Button(_ sender: Any) {
+        let value = priceFfield.text! + "2"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+    @IBAction func tap3Button(_ sender: Any) {
+        let value = priceFfield.text! + "3"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+    
+    @IBAction func tap4Button(_ sender: Any) {
+        let value = priceFfield.text! + "4"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+    
+    @IBAction func tap5Button(_ sender: Any) {
+        let value = priceFfield.text! + "5"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+        
+    @IBAction func tap6Button(_ sender: Any) {
+        let value = priceFfield.text! + "6"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+        
+    @IBAction func tao7Button(_ sender: Any) {
+        let value = priceFfield.text! + "7"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+    
+    @IBAction func tap8Button(_ sender: Any) {
+        let value = priceFfield.text! + "8"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+        
+    @IBAction func tap9Button(_ sender: Any) {
+        let value = priceFfield.text! + "9"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+    
+    @IBAction func tap0Button(_ sender: Any) {
+        let value = priceFfield.text! + "0"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+
+    @IBAction func tap00Button(_ sender: Any) {
+        let value = priceFfield.text! + "00"
+        if  let price =  Int(value) {
+            priceFfield.text! = "\(price)"
+        }
+    }
+    
+    @IBAction func tapCrearButton(_ sender: Any) {
+        priceFfield.text! = "0"
+    }
 }
