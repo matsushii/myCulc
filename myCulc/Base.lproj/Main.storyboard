@@ -42,6 +42,9 @@
                                 <rect key="frame" x="16" y="243" width="90" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="1"/>
+                                <connections>
+                                    <action selector="top1Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tEs-9e-XBL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKl-MN-SXA">
                                 <rect key="frame" x="214" y="175" width="90" height="60"/>
@@ -97,6 +100,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LtV-95-OTB"/>
                     </view>
+                    <connections>
+                        <outlet property="priceFfield" destination="te9-xe-f84" id="vdm-CZ-Bno"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
