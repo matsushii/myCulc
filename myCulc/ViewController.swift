@@ -98,4 +98,9 @@ class ViewController: UIViewController {
     @IBAction func tapCrearButton(_ sender: Any) {
         priceFfield.text! = "0"
     }
+    //
+    @IBAction func restart(_ segue: UIStoryboardSegue) {
+        // 金額フィールドを0でclearする
+        priceFfield.text = "0"
+    }
 }
