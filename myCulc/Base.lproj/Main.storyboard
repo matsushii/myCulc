@@ -208,22 +208,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="計算結果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gJ-km-O6q">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="計算結果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gJ-km-O6q">
                                 <rect key="frame" x="16" y="40" width="70" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PGV-kd-oY9">
+                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PGV-kd-oY9">
                                 <rect key="frame" x="16" y="69" width="288" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LET-Cu-LB1">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LET-Cu-LB1">
                                 <rect key="frame" x="16" y="150" width="288" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="別の計算をする"/>
                                 <connections>
                                     <segue destination="I5r-wq-Lt4" kind="unwind" unwindAction="restart:" id="1ZX-ZM-yqa"/>
@@ -231,6 +228,16 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PGV-kd-oY9" firstAttribute="leading" secondItem="LET-Cu-LB1" secondAttribute="leading" id="B5b-KH-jq4"/>
+                            <constraint firstItem="3gJ-km-O6q" firstAttribute="leading" secondItem="PGV-kd-oY9" secondAttribute="leading" id="a0T-bI-oLd"/>
+                            <constraint firstItem="PGV-kd-oY9" firstAttribute="trailing" secondItem="LET-Cu-LB1" secondAttribute="trailing" id="cCS-FC-sg3"/>
+                            <constraint firstItem="3gJ-km-O6q" firstAttribute="leading" secondItem="s2O-aW-dtP" secondAttribute="leadingMargin" id="dct-oD-3Wa"/>
+                            <constraint firstItem="PGV-kd-oY9" firstAttribute="top" secondItem="3gJ-km-O6q" secondAttribute="bottom" constant="8" id="kcO-Ba-wGe"/>
+                            <constraint firstItem="PGV-kd-oY9" firstAttribute="trailing" secondItem="s2O-aW-dtP" secondAttribute="trailingMargin" id="mwb-dv-fPF"/>
+                            <constraint firstItem="LET-Cu-LB1" firstAttribute="top" secondItem="PGV-kd-oY9" secondAttribute="bottom" constant="47" id="p9k-uz-vle"/>
+                            <constraint firstItem="3gJ-km-O6q" firstAttribute="top" secondItem="qVO-ZG-TPK" secondAttribute="top" constant="40" id="vP0-Z9-TlJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qVO-ZG-TPK"/>
                     </view>
                     <connections>
