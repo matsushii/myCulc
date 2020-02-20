@@ -8,21 +8,21 @@
 
 import UIKit
 class ViewController: UIViewController {
-    //IB:インターフェースビルダーの略
-    //weak:オーナーシップを持たない（オブジェクトを参照しない）
+    //  IB:インターフェースビルダーの略
+    //  weak:オブジェクトを参照しない
     @IBOutlet weak var priceFfield: UITextField!
     override func viewDidLoad() {
-        //  親クラスのUIViewControllerのviewDidLaodを呼び出す
+        // 親クラスのviewDidLaodを呼び出す
         super.viewDidLoad()
-        //  既存の処理を行った後に追加で行う処理を記述
+        //  既存処理を行った後に追加で行う処理を記述
     }
-    //  @IBAction：StoryBoardと関連していることを示す
+    //  @IBAction：StoryBoardとの関連を示す
     @IBAction func top1Button(_ sender: Any) {
-        //  priceFieldのtextに1を追加した文字列をvalueとして定義
+        //  priceFieldに1を追加した文字列をvalueとして定義
         let value = priceFfield.text! + "1"
         //  valueを整数型にアンラップしてpriceとして定義
         if  let price =  Int(value) {
-            //  priceFfieldにpriceに代入
+            // priceFfieldにpriceに代入
             priceFfield.text! = "\(price)"
         }
     }
@@ -98,9 +98,22 @@ class ViewController: UIViewController {
     @IBAction func tapCrearButton(_ sender: Any) {
         priceFfield.text! = "0"
     }
-    //
+    //  最後の画面から戻ってきたときの処理
     @IBAction func restart(_ segue: UIStoryboardSegue) {
-        // 金額フィールドを0でclearする
+        //  金額フィールドを0でclearする
         priceFfield.text = "0"
+    }
+    
+    //  画面遷移次の処理
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //  次の画面を取り出す
+        let viewController = segue.destination as! ResultViewController
+        
+        //  金額フィールドの文字列を数値に変換する
+        if let price = Int(priceFfield.text!) {
+            //  数値に変換した金額を次の画面に設定する
+            viewController.price = price
+        }
     }
 }
