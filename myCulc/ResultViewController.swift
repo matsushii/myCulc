@@ -26,7 +26,7 @@ class ResultViewController: UIViewController {
         // 割引後の価格を算出する
         let percentOffPrice = price - Int(waribikiPrice)
         //結果を表示する
-        resultField.text = "\(percentValue)"
+        resultField.text = "\(percentOffPrice)"
     }
     
 
